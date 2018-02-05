@@ -39,11 +39,14 @@ public class CapacityTask extends AsyncTask<Void, Void, Boolean> {
     @Override
     protected Boolean doInBackground(Void... params) {
         if (networkState == 1 || networkState == 2) {
-            String rattyJSON = GET2(c.getString(R.string.rattyUrl));
-            String josJSON = GET2(c.getString(R.string.josUrl));
-            String blueroomJSON = GET2(c.getString(R.string.blueroomUrl));
-            String andrewsJSON = GET2(c.getString(R.string.andrewsUrl));
-            String vdubJSON = GET2(c.getString(R.string.vdubUrl));
+            String clientId = "d4d562cc-42c3-42ba-aa44-4f045ae77112";
+            String urlPrefix = "https://api.students.brown.edu/wifi/count?client_id=" + clientId + "&location=";
+            String urlSuffix = "&history=true";
+            String rattyJSON = GET(urlPrefix + "ratty" + urlSuffix);
+            String josJSON = GET(urlPrefix + "jos" + urlSuffix);
+            String blueroomJSON = GET(urlPrefix + "blueroom" + urlSuffix);
+            String andrewsJSON = GET(urlPrefix + "andrews" + urlSuffix);
+            String vdubJSON = GET(urlPrefix + "vdub" + urlSuffix);
             setCapacity("Ratty", rattyJSON);
             setCapacity("V-Dub", vdubJSON);
             setCapacity("Andrews Commons", andrewsJSON);
@@ -77,10 +80,11 @@ public class CapacityTask extends AsyncTask<Void, Void, Boolean> {
 
     public void setCapacity(String eatery, String json) {
         try {
-            JSONArray arr = new JSONArray(json);
+            JSONObject raw = new JSONObject(json);
+            JSONArray historyArr = raw.getJSONArray("history");
             ArrayList<CountPoint> toStore = new ArrayList<>();
-            for (int i = 0; i < arr.length(); i++) {
-                JSONObject cur = arr.getJSONObject(i);
+            for (int i = 0; i < historyArr.length(); i++) {
+                JSONObject cur = historyArr.getJSONObject(i);
                 long time = Long.parseLong(cur.get("timestamp").toString()) * 1000;
                 int count = Integer.parseInt(cur.get("count").toString());
                 toStore.add(new CountPoint(time, count));
@@ -91,7 +95,7 @@ public class CapacityTask extends AsyncTask<Void, Void, Boolean> {
         }
     }
 
-    /*public String GET(String url) {
+    public String GET(String url) {
         StringBuilder sb = new StringBuilder();
         try {
             URL u = new URL(url);
@@ -106,9 +110,9 @@ public class CapacityTask extends AsyncTask<Void, Void, Boolean> {
             Log.d("DINING_ERROR", "Capacity IO error: \t" + e.getMessage());
         }
         return sb.toString();
-    }*/
+    }
 
-    public String GET2(String urlString) {
+    /*public String GET2(String urlString) {
         StringBuilder sb = new StringBuilder();
         try {
             URL url = new URL(urlString);
@@ -128,5 +132,5 @@ public class CapacityTask extends AsyncTask<Void, Void, Boolean> {
             e.printStackTrace();
         }
         return sb.toString();
-    }
+    }*/
 }

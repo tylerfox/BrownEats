@@ -19,11 +19,5 @@
     <string name="andrewsAddr">nzzvy@55o8y4hxu}t4kj{5}gv5gvoy5ruigrozoky5gtjxk}y5jk|oikyEnoyzuxCzx{k</string>
     <string name="vdubAddr">nzzvy@55o8y4hxu}t4kj{5}gv5gvoy5ruigrozoky5|j{hy5jk|oikyEnoyzuxCzx{k</string>
 
-    <string name="rattyUrl">https://i2s.brown.edu/wap/apis/localities/ratty/devices?history=true</string>
-    <string name="josUrl">https://i2s.brown.edu/wap/apis/localities/littlejo/devices?history=true</string>
-    <string name="blueroomUrl">https://i2s.brown.edu/wap/apis/localities/blueroom/devices?history=true</string>
-    <string name="andrewsUrl">https://i2s.brown.edu/wap/apis/localities/andrews/devices?history=true</string>
-    <string name="vdubUrl">https://i2s.brown.edu/wap/apis/localities/vdubs/devices?history=true</string>
-
 
 </resources>

@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/md_grey_700"
+                android:id="@+id/capacityLabel"
+                android:text="Capacity:  " />
+
+            <ProgressBar
+                android:layout_marginTop="7dp"
+                android:id="@+id/bar"
+                android:layout_width="190dp"
+                android:layout_height="10dp"
+                android:progressDrawable="@drawable/capacity_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/percent"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/capacityText"
+            android:textColor="@color/md_grey_500"
+            android:textSize="17sp"/>
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_grey_500"
+            app:relative_time_prefix="Last updated: "/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/viewHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:layout_marginTop="0dp"
+        android:paddingRight="15dp"
+        android:layout_toLeftOf="@id/viewMenu"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:text="View History"
+        android:textColor="@drawable/text_button"/>
+
+    <Button
+        android:id="@+id/viewMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:text="View Menu"
+        android:textColor="@drawable/text_button"/>
+</RelativeLayout>

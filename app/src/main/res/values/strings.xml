@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Brown Eats</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_activity_dining_info">DiningInfoActivity</string>
+
+    <string name="rattyAddr">nzzvy@55o8y4hxu}t4kj{5}gv5gvoy5ruigrozoky5xgzz5jk|oikyEnoyzuxCzx{k</string>
+    <string name="josAddr">nzzvy@55o8y4hxu}t4kj{5}gv5gvoy5ruigrozoky5rozzrkpu5jk|oikyEnoyzuxCzx{k</string>
+    <string name="blueroomAddr">nzzvy@55o8y4hxu}t4kj{5}gv5gvoy5ruigrozoky5hr{kxuus5jk|oikyEnoyzuxCzx{k</string>
+    <string name="andrewsAddr">nzzvy@55o8y4hxu}t4kj{5}gv5gvoy5ruigrozoky5gtjxk}y5jk|oikyEnoyzuxCzx{k</string>
+    <string name="vdubAddr">nzzvy@55o8y4hxu}t4kj{5}gv5gvoy5ruigrozoky5|j{hy5jk|oikyEnoyzuxCzx{k</string>
+
+    <string name="rattyUrl">https://i2s.brown.edu/wap/apis/localities/ratty/devices?history=true</string>
+    <string name="josUrl">https://i2s.brown.edu/wap/apis/localities/littlejo/devices?history=true</string>
+    <string name="blueroomUrl">https://i2s.brown.edu/wap/apis/localities/blueroom/devices?history=true</string>
+    <string name="andrewsUrl">https://i2s.brown.edu/wap/apis/localities/andrews/devices?history=true</string>
+    <string name="vdubUrl">https://i2s.brown.edu/wap/apis/localities/vdubs/devices?history=true</string>
+
+
+</resources>

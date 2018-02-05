@@ -1,0 +1,13 @@
+URLS
+String rattyJSON https://i2s.brown.edu/wap/apis/localities/ratty/devices?history=true
+String josJSON https://i2s.brown.edu/wap/apis/localities/littlejo/devices?history=true
+String blueroomJSON: https://i2s.brown.edu/wap/apis/localities/blueroom/devices?history=true
+String andrewsJSON: https://i2s.brown.edu/wap/apis/localities/andrews/devices?history=true
+String vdubJSON: https://i2s.brown.edu/wap/apis/localities/vdubs/devices?history=true
+
+URLS ENCODED
+RATTY: nzzvy@55o8y4hxu}t4kj{5}gv5gvoy5ruigrozoky5xgzz5jk|oikyEnoyzuxCzx{k
+JOS: nzzvy@55o8y4hxu}t4kj{5}gv5gvoy5ruigrozoky5rozzrkpu5jk|oikyEnoyzuxCzx{k
+Blueroom: nzzvy@55o8y4hxu}t4kj{5}gv5gvoy5ruigrozoky5hr{kxuus5jk|oikyEnoyzuxCzx{k
+Andrews: nzzvy@55o8y4hxu}t4kj{5}gv5gvoy5ruigrozoky5gtjxk}y5jk|oikyEnoyzuxCzx{k
+Vdub: nzzvy@55o8y4hxu}t4kj{5}gv5gvoy5ruigrozoky5|j{hy5jk|oikyEnoyzuxCzx{k
